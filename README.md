@@ -14,7 +14,7 @@ EXAMPLE USAGE AND OUTPUT (ON WINDOWS MACHINE):
 
 #########################################################################
 
-Usage: java -jar [totalCents] [optimalChangeNeeded 0/1(0 for NO and 1 for YES)] [propertiesFilePath]
+Usage: java -jar [jarFile] [totalCents(integer)] [optimalChangeNeeded 0/1(0 for NO and 1 for YES)] [propertiesFilePath]
 
 
 java -jar coincalc.jar 78 1 F:\\TEST_FOLDER\\coin-inventory.properties
