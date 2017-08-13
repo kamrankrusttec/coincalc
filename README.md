@@ -12,7 +12,7 @@ subtracting to get the lowest so as to use the least number of coins.
 
 EXAMPLE USAGE AND OUTPUT (ON WINDOWS MACHINE):
 
-#######################################################################################################
+#########################################################################
 
 Usage: java -jar [totalCents] [optimalChangeNeeded 0/1(0 for NO and 1 for YES)] [propertiesFilePath]
 
@@ -38,7 +38,7 @@ HERE IS YOUR CHANGE:
 
 1 coin(s) of denomination 1c each.
 
-#######################################################################################################
+#########################################################################
 
 
 All use cases have been covered and minimal unit test cases have been added as well.
