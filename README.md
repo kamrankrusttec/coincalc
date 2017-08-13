@@ -1,7 +1,6 @@
-This project resolves the coin-changing problem using the "highest value coin used first" principle. 
+This project resolves the coin-changing problem using the "highest value coin used first" principle (properties file included). 
 
 It covers both approaches,
-
 
 - UNLIMITED SUPPLY OF COINS
 
