@@ -10,7 +10,7 @@ It covers both approaches,
 The logic is quite performant and better than the orthodox algorithms where we get sum of all values and then keep 
 subtracting to get the lowest so as to use the least number of coins.
 
-EXAMPLE USAGE AND OUTPUT (ON WINDOWS MACHINE):
+EXAMPLE USAGE AND OUTPUT (ON WINDOWS MACHINE): (jar file added to target folder)
 
 #########################################################################
 
