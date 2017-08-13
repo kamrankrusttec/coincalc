@@ -1,4 +1,6 @@
-This project resolves the coin-changing problem using the "highest value coin used first" principle. It covers both approaches,
+This project resolves the coin-changing problem using the "highest value coin used first" principle. 
+
+It covers both approaches,
 
 - UNLIMITED SUPPLY OF COINS
 - LIMITED SUPPLY OF COINS
@@ -32,3 +34,5 @@ kamran@krusttechnologies.com
 
 Best regards,
 Mohammad Kamran.
+
+P.S. It is an Eclipse-based project so you can import it directly into Eclipse should you wish to do so.
