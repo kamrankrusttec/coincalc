@@ -53,15 +53,14 @@ public class CoinServiceImplementation implements CoinService {
 				addCoinToList(quotientWhichIsNumberOfCoins, maxDenomination);
 				int remainingAmount = cents - (quotientWhichIsNumberOfCoins * maxDenomination);
 				maxDenomination = Coin.denominations[indexForMaxDenomination + 1];
-				int nextQuotientWhichIsNumberOfCoins = remainingAmount
-						/ maxDenomination;
+				int nextQuotientWhichIsNumberOfCoins = remainingAmount	/ maxDenomination;
 				if (nextQuotientWhichIsNumberOfCoins == 0) {
-					updateMaxDenomAndRepeatForOptimalChange(cents,remainingAmount);
+					updateMaxDenomAndRepeatForOptimalChange(remainingAmount);
 				} else {
 					addCoinToList(nextQuotientWhichIsNumberOfCoins,	maxDenomination);
 					remainingAmount = remainingAmount - (nextQuotientWhichIsNumberOfCoins * maxDenomination);
 					if (remainingAmount > 0) {
-						updateMaxDenomAndRepeatForOptimalChange(cents,remainingAmount);
+						updateMaxDenomAndRepeatForOptimalChange(remainingAmount);
 					}
 				}
 			}
@@ -116,11 +115,9 @@ public class CoinServiceImplementation implements CoinService {
 	 * @param cents
 	 * @param remainingAmount
 	 */
-	private void updateMaxDenomAndRepeatForOptimalChange(int cents,
-			int remainingAmount) {
+	private void updateMaxDenomAndRepeatForOptimalChange(int remainingAmount) {
 		++indexForMaxDenomination;
-		cents = remainingAmount;
-		getOptimalChangeFor(cents);
+		getOptimalChangeFor(remainingAmount);
 	}
 
 	/**
@@ -152,7 +149,6 @@ public class CoinServiceImplementation implements CoinService {
 		int coinsAvailableForThisDenomination = -1;
 		if (principleUtil.getAvailableCoins(denomination) != null){
 			coinsAvailableForThisDenomination = Integer.valueOf(principleUtil.getAvailableCoins(denomination));
-//			System.out.println("Number of coins available for denomination " + denomination + " is " + coinsAvailableForThisDenomination);
 		}else{
 			throw new DenominationNotFoundException("Denomination "+denomination+ " not found in configuration file");
 		}
