@@ -22,7 +22,7 @@ public class MainCoinScreen {
 			optimalChangeFlag = Integer.valueOf(args[1]);
 			propertiesFile = args[2];
 		}else{
-			System.err.println("Usage: java -jar [totalCents(integer)] [optimalChangeNeeded 0/1(0 for NO and 1 for YES)] [propertiesFilePath]");
+			System.err.println("Usage: java -jar [jarFile] [totalCents(integer)] [optimalChangeNeeded 0/1(0 for NO and 1 for YES)] [propertiesFilePath]");
 			System.exit(1);
 		}
 		// Calling CoinEngine for conversion
