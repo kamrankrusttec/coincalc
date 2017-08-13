@@ -14,6 +14,7 @@ public class MainCoinScreen {
 	 * @param args
 	 */
 	public static void main(String args[]){
+		// Static data for preset testing
 		int totalCents = PrincipleConstants.TOTAL_CENTS;
 		String propertiesFile = PrincipleConstants.COIN_INVENTORY_FILENAME;
 		int optimalChangeFlag = 0;
